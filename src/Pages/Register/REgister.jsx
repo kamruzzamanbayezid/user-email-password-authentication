@@ -37,7 +37,6 @@ const REgister = () => {
 
             createUserWithEmailAndPassword(auth, email, password)
                   .then(result => {
-                        console.log(result.user);
                         setSuccessUser('Account Created Successfully...');
 
                         updateProfile(result.user, { 
